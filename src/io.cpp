@@ -31,8 +31,8 @@ unordered_map<string, function<void()>> flags = {
     {"--help", [] { printMan(); quit = true;}},
     {"-t", [] { printTree = true; }},
     {"--tree", [] { printTree = true; }},
-    {"-r", [] { printExp = true; }},
-    {"--regular", [] { printExp = true; }},
+    {"-i", [] { printExp = true; }},
+    {"--infix", [] { printExp = true; }},
 };
 
 /**
@@ -57,10 +57,10 @@ void printMan() {
         << "\n"
         << "\t-h, --help\n"
         << "\t\tDisplay this help page and exit.\n"
-        << "\t-t, --tree"
+        << "\t-t, --tree\n"
         << "\t\tDisplay the corresponding tree for the RPN expression.\n"
-        << "\t-r, --regular"
-        << "\t\tDisplay RPN expression in regular notation.\n"
+        << "\t-i, --infix\n"
+        << "\t\tDisplay RPN expression in infix notation.\n"
         << "\n"
         << "RETURN CODES\n"
         << "\t0 - Success\n"

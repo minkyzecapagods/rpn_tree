@@ -23,7 +23,7 @@ using namespace std;
  * Command-line flags:
  * - -h, --help : display help and exit
  * - -t, --tree : display the expression tree
- * - -e, --expression : display the expression in standard notation
+ * - -i, --infix : display the expression in infix notation
  */
 int main(int argc, char* argv[]) {
 
@@ -44,8 +44,8 @@ int main(int argc, char* argv[]) {
 				"Error: Invalid flag '" << argv[i] << "'.\n"
 				"View manual with ./rpn_tree [-h | --help].\n";
 			return 1;
-		if (quit) return 0; // quit if help was requested
 		}
+		if (quit) return 0; // quit if help was requested
 	}
 
 	// Validate and parse the last argument (RPN expression)
@@ -68,7 +68,7 @@ int main(int argc, char* argv[]) {
 		cout << "\nExpression as a binary tree:\n" << traversePreOrder(root) << "\n";
 	
 	if (printExp)
-		cout << "\nExpression in regular notation: " << treeToExp(root) << "\n";
+		cout << "\nExpression in infix notation: " << treeToExp(root) << "\n";
 
 	return 0;
  }

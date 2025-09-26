@@ -61,7 +61,7 @@ string treeToExp(NodePtr n) {
             left = "(" + left + ")";
         if (n -> right -> isOp)
             right = "(" + right + ")";
-        return left + n -> op + right;
+        return left + " " + n -> op + " " + right;
     }
     return to_string(n -> num);
 }
