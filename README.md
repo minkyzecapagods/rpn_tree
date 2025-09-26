@@ -1,5 +1,3 @@
-/*! \mainpage rpn_tree
-
 # rpn_tree
 
 rpn_tree is a C++ program that builds and evaluates a binary expression tree from a Reverse Polish Notation (RPN) expression. 
