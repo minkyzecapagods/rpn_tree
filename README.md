@@ -126,6 +126,8 @@ Expression as a binary tree:
 │  │  └──2
 │  └──293
 └──-2
+
+Expression in infix notation: ((1 + 2) - 293) / -2
 ```
 ## Documentation
 
